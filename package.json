@@ -1,0 +1,28 @@
+{
+  "name": "emotion-cache-ssr-error",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn build && yarn serve",
+    "build": "rimraf dist && webpack --mode=development",
+    "serve": "serve dist"
+  },
+  "dependencies": {
+    "@emotion/core": "^10.0.7",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/preset-react": "^7.0.0",
+    "@emotion/babel-preset-css-prop": "^10.0.7",
+    "babel-loader": "^8.0.5",
+    "rimraf": "^2.6.3",
+    "serve": "^10.1.2",
+    "static-site-generator-webpack-plugin": "^3.4.2",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3"
+  }
+}
