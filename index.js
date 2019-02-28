@@ -8,10 +8,10 @@ const App = () => (
       Hello world!
     </h1>
   </div>
-)
+);
 
 if (typeof document !== 'undefined') {
-  hydrate(<Root />, document.getElementById('root'));
+  hydrate(<App />, document.getElementById('root'));
 }
 
 export default (locals) => {
