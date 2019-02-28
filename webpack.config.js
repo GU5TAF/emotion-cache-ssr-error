@@ -2,7 +2,7 @@ const path = require('path');
 const StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin');
 
 module.exports = {
-  target: 'node',
+  target: 'web',
   entry: {
     main: './index'
   },
@@ -25,7 +25,7 @@ module.exports = {
           presets: [
             ['@babel/preset-env', { modules: false }],
             '@babel/preset-react',
-            '@emotion/babel-preset-css-prop'
+            // '@emotion/babel-preset-css-prop'
           ]
         }
       }

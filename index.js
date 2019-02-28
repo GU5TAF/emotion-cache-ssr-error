@@ -1,14 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { renderToString } from 'react-dom/server';
 import { hydrate } from 'react-dom';
 
-const App = () => (
-  <div css={{ backgroundColor: 'green' }}>
-    <h1 css={{ color: 'pink' }}>
-      Hello world!
+const App = () => {
+  useEffect(() => {
+    console.log('Hello world!');
+  }, []);
+
+  return (
+    <div>
+      <h1>
+        Hello world!
     </h1>
-  </div>
-);
+    </div>
+  )
+};
 
 if (typeof document !== 'undefined') {
   hydrate(<App />, document.getElementById('root'));
