@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start": "yarn build && yarn serve",
-    "build": "rimraf dist && webpack --mode=development",
+    "build": "node ./rdadoune.js && rimraf dist && webpack --mode=development",
     "serve": "serve dist"
   },
   "dependencies": {

@@ -2,7 +2,7 @@ const path = require('path');
 const StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin');
 
 module.exports = {
-  target: 'node',
+  target: 'web',
   entry: {
     main: './index'
   },
